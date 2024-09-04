@@ -9,7 +9,7 @@ import Vision from "./components/Vision";
 
 function App() {
   return (
-    <div>
+    <div className="p-1">
       <Navbar />
       <HeroSection />
       <Features />

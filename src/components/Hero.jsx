@@ -1,6 +1,40 @@
+import { useEffect, useRef } from "react";
+import Globe from "react-globe.gl";
+
 function HeroSection() {
+  const globeEl = useRef();
+
+  useEffect(() => {
+    const globe = globeEl.current;
+
+    const rotateGlobe = () => {
+      if (globe) {
+        globe.pointOfView({
+          lat: globe.pointOfView().lat,
+          lng: globe.pointOfView().lng + 0.1,
+        });
+      }
+      requestAnimationFrame(rotateGlobe);
+    };
+
+    rotateGlobe();
+  }, []);
+
   return (
-    <div className="h-auto md:h-[40rem] w-full sm:pt-10 lg:pt-12 md:py-8">
+    <div className="relative h-auto md:h-[40rem] w-full sm:pt-10 lg:pt-12 md:py-8">
+      <div className="md:block hidden">
+        <div className="absolute inset-0 z-0 w-full h-full flex justify-center items-center ">
+          <Globe
+            ref={globeEl}
+            globeImageUrl="//unpkg.com/three-globe/example/img/earth-dark.jpg"
+            backgroundColor="rgba(0, 0, 0, 0)"
+            animateIn={false}
+            width={930}
+            height={930}
+          />
+        </div>
+      </div>
+
       <div className="p-4 relative z-10 w-full text-center mx-auto max-w-screen-xl px-4 md:px-20">
         <h1
           className="flex items-center justify-center text-center lg:text-6xl md:text-5xl text-3xl py-4 font-bold mb-4"

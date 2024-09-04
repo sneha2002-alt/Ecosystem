@@ -7,9 +7,9 @@ function Navbar() {
             <img src="/logo.png" alt="logo" width="180" height="180" />
           </a>
 
-          <nav className="hidden gap-12 lg:flex">
+          <div className="hidden gap-12 lg:flex">
             <a
-              href="#"
+              href="/"
               className="text-md font-semibold transition duration-100 hover:text-lime-500 active:text-lime-700"
             >
               Home
@@ -26,18 +26,14 @@ function Navbar() {
             >
               Creators
             </a>
+
             <a
               href="#"
               className="text-md font-semibold transition duration-100 hover:text-lime-500 active:text-lime-700"
             >
-              <a
-                href="#"
-                className="text-md font-semibold transition duration-100 hover:text-lime-500 active:text-lime-700"
-              >
-                Fans
-              </a>
+              Fans
             </a>
-          </nav>
+          </div>
 
           <div className="-ml-8 hidden flex-col gap-2.5 sm:flex-row sm:justify-center lg:flex lg:justify-start">
             <a
