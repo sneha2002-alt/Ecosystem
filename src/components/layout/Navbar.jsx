@@ -1,10 +1,10 @@
 function Navbar() {
   return (
-    <div className="relative bg-zinc-900 bg-opacity-40 rounded-full top-10 inset-x-0 lg:max-w-screen-lg mx-auto z-50">
+    <div className=" bg-zinc-900 bg-opacity-40 rounded-full top-10 inset-x-0 lg:max-w-screen-lg mx-auto h-[80px] z-50">
       <div className=" px-4 md:px-8">
         <header className="flex items-center justify-between py-4 ">
           <a href="/">
-            <img src="/public/logo.png" alt="logo" width="180" height="180" />
+            <img src="/logo.png" alt="logo" width="180" height="180" />
           </a>
 
           <nav className="hidden gap-12 lg:flex">
@@ -45,7 +45,7 @@ function Navbar() {
               className="inline-block rounded-full bg-blue-400 px-8 py-2 text-center text-sm font-semibold text-white outline-none ring-indigo-300 transition duration-100 hover:bg-blue-500 focus-visible:ring active:bg-blue-400 md:text-base"
             >
               <img
-                src="/public/telegram.svg"
+                src="/telegram.svg"
                 alt="logo"
                 width="30"
                 height="30"

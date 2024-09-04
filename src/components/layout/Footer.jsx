@@ -21,7 +21,7 @@ function Footer() {
             <div className="flex gap-4">
               <a href="#" target="_blank">
                 <img
-                  src="/public/telegram.svg"
+                  src="/telegram.svg"
                   alt="telegram"
                   className="bg-white rounded-full border-2 w-10 h-10 p-1 "
                 />
@@ -33,7 +33,7 @@ function Footer() {
                 className=" transition duration-100 hover:text-gray-500 active:text-gray-600"
               >
                 <img
-                  src="/public/x.svg"
+                  src="/x.svg"
                   alt="x"
                   className="bg-white rounded-full border-2 w-10 h-10 p-1"
                 />
