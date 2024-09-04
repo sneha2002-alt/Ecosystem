@@ -7,12 +7,7 @@ function Footer() {
           <div className="col-span-full lg:col-span-2">
             <div className="mb-4 lg:-mt-2 ">
               <a href="/" className="inline-flex items-center">
-                <img
-                  src="/public/logo.png"
-                  alt="logo"
-                  width={200}
-                  height={200}
-                />
+                <img src="/logo.png" alt="logo" width={200} height={200} />
               </a>
             </div>
 
